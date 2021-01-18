@@ -31,6 +31,7 @@
         box-shadow: 0px 0px 20px #1a62f51a;
         border-radius: $border-radius;
         padding: 10px;
+        height: 100%;
         .nav_row {
             @include flex-properties(flex, row, null, space-between, center, null);
         }
