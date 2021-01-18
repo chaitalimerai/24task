@@ -9,26 +9,7 @@
         url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf") format("truetype"),
         url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text") format("svg");
 }
-// medium font
-@font-face {
-    font-family: "SF Pro Text";
-    src: url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.eot");
-    src: url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.svg#SF Pro Text") format("svg");
-}
-// bold font
-@font-face {
-    font-family: "SF Pro Text";
-    src: url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.eot");
-    src: url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.svg#SF Pro Text") format("svg");
-}
+
 $font-family-base: "SF Pro Text", sans-serif;
 // $font-family-secondary: "Lato", sans-serif;
 
