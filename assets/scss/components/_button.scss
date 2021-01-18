@@ -1,0 +1,33 @@
+.btn,
+a.btn {
+    font-family: $font-family-base;
+    font-weight: $font-weight-medium;
+    color: $white;
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    padding: 5px 25px;
+    border-radius: $border-radius;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+a {
+    &.btn-primary {
+        background: $primary;
+        border-color: $primary;
+    }
+}
+.btn-primary {
+    background: $primary;
+    border-color: $primary;
+}
+.btn-primary {
+    &:hover,
+    &.active {
+        background: $transparent !important;
+        border-color: $primary;
+        color: $primary !important;
+        
+    }
+}
+

@@ -1,0 +1,16 @@
+.form-group {
+    position: relative;
+    margin-bottom: 0;
+    .form-control {
+        @extend %w-100;
+        font-size: $font-size-sm;
+        font-weight: 400;
+        text-transform: capitalize;
+        box-shadow: none;
+        border: 0;
+        border-radius: border-radius;
+        padding: 15px 35px;
+        background-color: $dark100;
+        color: $dark200;
+    }
+}

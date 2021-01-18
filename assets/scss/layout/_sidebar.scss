@@ -1,0 +1,169 @@
+/* =====================primary nav===================== */
+
+.primary_nav {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -800px;
+  z-index: 9;
+  background-color: $dark;
+  box-shadow: -3px 1px 13px 0px #e2e2e2;
+  border-right: 1px solid var(--gray);
+  transition: all 500ms ease;
+
+  @media (min-width: map_get($breakpoints, "lg")) {
+    display: none;
+  }
+  &.toggleActive {
+    left: 0;
+  }
+  .content-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* =====================secondary nav===================== */
+
+.secondary_nav {
+  height: 100%;
+  background: $white 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #1a62f51a;
+  border-radius: $border-radius;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: map_get($breakpoints, "tablate")) {
+    display: none;
+  }
+
+  @media (max-width: map_get($breakpoints, "tablate")) {
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -800px;
+    z-index: 10;
+    display: flex;
+    transition: all 500ms ease;
+    flex-direction: column;
+  }
+
+  &.toggleActive {
+    left: 0;
+  }
+  .status_row {
+    justify-content: flex-end;
+    @media (max-width: map_get($breakpoints, "tablate")) {
+      justify-content: space-between;
+    }
+  }
+  .status_badge {
+    background-color: $transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    @include flex-properties(flex, row, null, null, center, null);
+    span {
+      height: 5px;
+      width: 5px;
+      padding: 5px;
+      padding: 3px;
+      border-radius: 50%;
+      background-color: $primary;
+      margin-right: 5px;
+    }
+  }
+  .figure {
+    .profile_row {
+      @extend %w-100;
+      text-align: center;
+      margin: 10px 0;
+      .user_profile {
+        height: 80px;
+        width: 80px;
+        object-fit: contain;
+      }
+    }
+    .figure-caption {
+      font-weight: $font-weight-bold;
+    }
+  }
+  .rating_row {
+    @include flex-properties(flex, row, null, null, center, null);
+    margin: 5px 0;
+    .stars_row {
+      display: flex;
+      img {
+        height: 13px;
+        width: 13px;
+        object-fit: contain;
+        margin: 0 3px;
+      }
+    }
+    span {
+      margin-left: 5px;
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      @include flex-properties(flex, row, null, null, center, null);
+      h6 {
+        padding-left: 10px;
+        font-size: $font-size-smaller;
+        color: $black;
+        margin: 0;
+        font-weight: $font-weight-bold;
+        &.disabled {
+          color: $gray;
+        }
+      }
+    }
+    .icons {
+      height: 20px;
+      width: 30px;
+      object-fit: contain;
+    }
+    .social_icons {
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+      margin-left: 5px;
+    }
+  }
+  .jobs_result {
+    h6 {
+      font-size: $font-size-smaller;
+      color: $black;
+      font-weight: $font-weight-bold;
+      span {
+        color: $primary;
+        padding-right: 10px;
+      }
+    }
+    .jobs_nav {
+      padding: 0 5px;
+      .social_icons {
+        height: 13px;
+        width: 13px;
+      }
+    }
+  }
+  .nav_footer {
+    @include flex-properties(flex, row, null, space-between, null, null);
+    .nav-link {
+      @include flex-properties(flex, column, null, null, flex-start, null);
+      h6 {
+        padding-left: 0;
+      }
+      span {
+        color: #363636;
+        font-weight: $font-weight-normal;
+      }
+    }
+  }
+}

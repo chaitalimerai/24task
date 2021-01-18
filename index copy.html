@@ -143,15 +143,11 @@
       <div class="main_content">
         <div class="container">
           <div class="row">
-            <aside class="col-md-4 col-lg-3 secondary_nav" id="secondary_nav">
-              
-              <div class="row m-0 status_row">
+            <aside class="col-md-4 col-lg-3 secondary_nav">
+              <div class="row m-0 justify-content-end">
                 <div class="status_badge rounded-pill badge badge-primary">
                   <span></span>Online
                 </div>
-                <button class="btn toggle_bars_btn d-flex d-md-none" id="close_icon" onclick="toggleSecondarySidebar()" type="button">
-                  <img src="./assets/images/icons/close_icon.svg" class="toggle_icons" alt="Bar Icon">
-                </button>
               </div>
               <figure class="figure">
                 <div class="profile_row">
@@ -249,39 +245,36 @@
                 </li>
               </ul>
             </aside>
-            <section class="col-md-8 col-lg-9">
+            <section class="col-md-8 col-lg-8">
               <div class="sub_content_wrapper">
-                <button class="btn toggle_bars_btn w-100 justify-content-end d-flex d-md-none" onclick="toggleSecondarySidebar()" type="button"
-                  aria-label="Toggle navigation">
-                  <img src="./assets/images/icons/user.svg" class="toggle_icons" alt="Bar Icon">
-                </button>
                 <div class="nav_row">
                   <ul class="custom_nav nav nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link active pl-0" id="pills-editprofile-tab" data-toggle="pill"
-                        href="#pills-editprofile" role="tab" aria-controls="pills-editprofile" aria-selected="true">edit
+                      <a class="nav-link active pl-0" id="pills-editprofile-tab" data-bs-toggle="pill"
+                        href="#pills-editprofile" role="tab" aria-controls="pills-editprofile"
+                        aria-selected="false">edit
                         profile</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                        aria-controls="pills-profile" aria-selected="false">Profile</a>
+                      <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile"
+                        role="tab" aria-controls="pills-profile" aria-selected="true">profile</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="pills-portfolio-tab" data-toggle="pill" href="#pills-portfolio" role="tab"
-                        aria-controls="pills-portfolio" aria-selected="false">portfolio</a>
+                      <a class="nav-link" id="pills-portfolio-tab" data-bs-toggle="pill" href="#pills-portfolio"
+                        role="tab" aria-controls="pills-portfolio" aria-selected="false">portfolio</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="pills-balance-tab" data-toggle="pill" href="#pills-balance" role="tab"
+                      <a class="nav-link" id="pills-balance-tab" data-bs-toggle="pill" href="#pills-balance" role="tab"
                         aria-controls="pills-balance" aria-selected="false">balance</a>
                     </li>
                   </ul>
                   <button type="button" class="btn btn-primary">save</button>
                 </div>
-                <div class="profile_content tab-content" id="pills-tabContent">
+                <div class="tab-content profile_content" id="pills-tabContent">
                   <div class="tab-pane fade show active" id="pills-editprofile" role="tabpanel"
                     aria-labelledby="pills-editprofile-tab">
                     <h5>Kyle D. <span>@kyleducharme</span></h5>
-                    <form action="#" class="w-100" id="editFrm">
+                    <form action="#">
                       <div class="custom_form_row">
                         <div class="form-group">
                           <label for="headlineInput" class="form-label">Professional Headline</label>
@@ -452,50 +445,50 @@
                                 <label for="userNameLabel" class="form-label">Country</label>
                                 <!-- <input type="text" class="form-control" id="userNameLabel"
                                   placeholder="United States"> -->
-                                <select class="form-select" id="inputGroupSelect01">
-                                  <option selected>Choose...</option>
-                                  <option value="1">United States</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="userNameLabel" class="form-label">States</label>
-                                <select class="form-select" id="inputGroupSelect01">
-                                  <option selected>Gujarat</option>
-                                  <option value="1">United States</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Gujarat</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                               </div>
                             </div>
                             <div class="col-md-12">
                               <div class="form-group">
                                 <label for="userNameLabel" class="form-label">Address</label>
-                                <select class="form-select" id="inputGroupSelect01">
-                                  <option selected>San Francisco</option>
-                                  <option value="1">United States</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>San Francisco</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                               </div>
                             </div>
                           </div>
 
                         </div>
-                      </div>
                     </form>
                   </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                    aria-labelledby="pills-profile-tab">
                     <h5>Kyle D. <span>@kyleducharme</span></h5>
                     <form action="#">
                       <div class="custom_form_row">
                         <div class="form-group">
                           <label for="headlineInput" class="form-label">Professional Headline</label>
                           <input type="email" class="form-control  common-control" id="headlineInput"
-                            placeholder="Iso Developer, UI/UX Designer" disabled readonly>
+                            placeholder="Iso Developer, UI/UX Designer">
                         </div>
                         <div class="form-group">
                           <label for="headlineInput" class="form-label">Professional Headline</label>
@@ -621,22 +614,20 @@
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="firstNameLabel" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstNameLabel" placeholder="Setlana"
-                                  disabled readonly>
+                                <input type="text" class="form-control" id="firstNameLabel" placeholder="Setlana">
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="lastNameLabel" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastNameLabel" placeholder="Anyukova"
-                                  disabled readonly>
+                                <input type="text" class="form-control" id="lastNameLabel" placeholder="Anyukova">
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="userNameLabel" class="form-label">User Name</label>
-                                <input type="text" class="form-control" id="userNameLabel" placeholder="setlanaanyukova"
-                                  disabled readonly>
+                                <input type="text" class="form-control" id="userNameLabel"
+                                  placeholder="setlanaanyukova">
                               </div>
                             </div>
                             <div class="col-md-6">
@@ -644,12 +635,11 @@
                                 <label for="contactLabel" class="form-label">Mobile Number</label>
                                 <div class="d-flex">
                                   <div class="usd_flag_row mr-2">
-                                    <input type="number" class="form-control" id="contactLabel" placeholder="+1"
-                                      disabled readonly>
+                                    <input type="number" class="form-control" id="contactLabel" placeholder="+1">
                                     <img src="./assets/images/icons/usd_flag.svg" class="usd_flag" alt="usd_flag">
                                   </div>
                                   <input type="number" class="form-control w-100" id="contactLabel"
-                                    placeholder="586-258-4589" disabled readonly>
+                                    placeholder="586-258-4589">
                                 </div>
                               </div>
                             </div>
@@ -657,7 +647,7 @@
                               <div class="form-group">
                                 <label for="emailLabel" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="emailLabel"
-                                  placeholder="setlanaanyukova@gmail.com" disabled readonly>
+                                  placeholder="setlanaanyukova@gmail.com">
                               </div>
                             </div>
                             <div class="col-md-6">
@@ -665,46 +655,46 @@
                                 <label for="userNameLabel" class="form-label">Country</label>
                                 <!-- <input type="text" class="form-control" id="userNameLabel"
                                   placeholder="United States"> -->
-                                <select class="form-select" id="inputGroupSelect01" disabled readonly>
-                                  <option selected>Choose...</option>
-                                  <option value="1">United States</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="userNameLabel" class="form-label">States</label>
-                                <select class="form-select" id="inputGroupSelect01" disabled readonly>
-                                  <option selected>Gujarat</option>
-                                  <option value="1">United States</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Gujarat</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                               </div>
                             </div>
                             <div class="col-md-12">
                               <div class="form-group">
                                 <label for="userNameLabel" class="form-label">Address</label>
-                                <select class="form-select" id="inputGroupSelect01" disabled readonly>
-                                  <option selected>San Francisco</option>
-                                  <option value="1">United States</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>San Francisco</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                               </div>
                             </div>
                           </div>
 
                         </div>
-                      </div>
                     </form>
                   </div>
                   <div class="tab-pane fade" id="pills-portfolio" role="tabpanel" aria-labelledby="pills-portfolio-tab">
-                    .4..
+                    portfolio
                   </div>
-                  <div class="tab-pane fade" id="pills-balance" role="tabpanel" aria-labelledby="pills-balance-tab">.5..
+                  <div class="tab-pane fade" id="pills-balance" role="tabpanel" aria-labelledby="pills-balance-tab">
+                    balance
                   </div>
                 </div>
               </div>
@@ -718,9 +708,30 @@
   </div>
   <!-- ends: main wrapper -->
 
+  <!-- modal -->
+  <div class="videoModal modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+            <img src="./assets/images/icons/close_icon.svg" class="close_icon" alt="close_icon">
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="300" src="https://www.youtube.com/embed/yP8Qedl1gS0" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ends: modal -->
+
   <!-- javascripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/scss/vendor/bootstrap/jquery/jquery-3.3.1.slim.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="./assets/scss/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- swiper JS -->
   <script src="./assets/scss/vendor/js/swiper-bundle.min.js"></script>
   <!-- custom js -->

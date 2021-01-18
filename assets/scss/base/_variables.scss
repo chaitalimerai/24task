@@ -1,0 +1,65 @@
+// Font-family
+// normal font
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot");
+    src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text") format("svg");
+}
+// medium font
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.eot");
+    src: url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/1bd3de6fcdd9ba7750e5a353dc6ef6e3.svg#SF Pro Text") format("svg");
+}
+// bold font
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.eot");
+    src: url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.svg#SF Pro Text") format("svg");
+}
+$font-family-base: "SF Pro Text", sans-serif;
+// $font-family-secondary: "Lato", sans-serif;
+
+// Font-size
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.9;
+$font-size-smaller: 0.8rem;
+$font-size-md: 1.3rem;
+$font-size-h3: 1.5rem;
+
+// Font-weight
+$font-weight-normal: normal;
+$font-weight-medium: Medium;
+$font-weight-bold: Bold;
+
+// Border Radius
+$border-radius: 0.3125rem;
+$border-radius-sm: 0.3rem;
+$border-radius-lg: 1.2rem;
+
+//Buttons
+$btn-border-radius: 0;
+$btn-font-weight: $font-weight-normal;
+$btn-font-size: $font-size-sm;
+
+//Breakpoints
+$breakpoints: (
+    "xl": 1200px,
+    "onlyxl": 1024px,
+    "lg": 992px,
+    "md": 768px,
+    "tablate": 767px,
+    "sm": 576px,
+);
